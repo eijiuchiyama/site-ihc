@@ -12,7 +12,6 @@ body{
 .title{
 	height: 100%; 
 	width: 75%; 
-	display: flex; 
 	justify-content: center; 
 	align-items: center;
 	text-align: justify;
@@ -21,7 +20,6 @@ body{
 .group-names{
 	height: 100%; 
 	width: 50%;
-	display: flex; 
 	justify-content: center; 
 	align-items: center;
 	text-align: justify;
@@ -43,7 +41,7 @@ body{
 	list-style: square;
 }
 
-.title_topics{
+.title-topics{
 	padding: 10pt;
 }
 
@@ -72,5 +70,69 @@ body{
 	border-radius: 20pt;
 	box-sizing: border-box;
 	width: calc(100% - 20pt);
+}
 
+/* Estilo dos links */
+.sidebar a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+}
+
+/* Barra lateral */
+.sidebar {
+  position: fixed;
+  left: -250px; /* escondida por padrão */
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #85c0c4;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+  transition: left 0.3s;
+  padding-top: 60px;
+}
+
+
+.sidebar a:hover {
+  background-color: #85c0c4;
+}
+
+/* Esconde o checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Botão de abrir/fechar o menu */
+.menu-button {
+  position: fixed;
+  top: 50px;
+  left: 30px;
+  background-color: #85c0c4;
+  color: #333;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* Quando o checkbox está marcado → mostra o menu */
+#menu-toggle:checked ~ .sidebar {
+  left: 0;
+}
+
+.content{
+	margin-left: 250px;
+	margin-right: 50px;
+	display: flex;             /* ativa flexbox */
+	flex-direction: column;    /* empilha os filhos verticalmente */
+	align-items: center;       /* centraliza horizontalmente os filhos */
+	gap: 20px;                 /* espaço entre os blocos */
+	padding: 20px;
+}
+
+.links-sidebar{
+	margin-top: 50px;
+	margin-left: 30px;
 }
