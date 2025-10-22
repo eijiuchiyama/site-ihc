@@ -152,8 +152,8 @@ body{
 }
 
 .member-photo {
-  width: 50px;       /* tamanho da imagem */
-  height: 50px;
+  width: 60px;       /* tamanho da imagem */
+  height: 60px;
   border-radius: 50%; /* deixa circular */
   object-fit: cover;  /* corta bordas e preenche */
   border: 2px solid #333; /* opcional: borda ao redor */
