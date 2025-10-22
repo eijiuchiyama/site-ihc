@@ -136,3 +136,27 @@ body{
 	margin-top: 50px;
 	margin-left: 30px;
 }
+
+.footer{
+	background-color: #85c0c4;
+	width:100%;
+	padding:30px;
+	margin-top:30px;
+}
+
+.name{
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre imagem e texto */
+  margin: 8px 0;
+}
+
+.member-photo {
+  width: 50px;       /* tamanho da imagem */
+  height: 50px;
+  border-radius: 50%; /* deixa circular */
+  object-fit: cover;  /* corta bordas e preenche */
+  border: 2px solid #333; /* opcional: borda ao redor */
+}
+
+
