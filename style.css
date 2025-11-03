@@ -1,6 +1,9 @@
 * { box-sizing: border-box; }
 
 body{
+	background-image: url('bat.png');
+	background-repeat: repeat;
+	background-size: 50px 50px;
 	background-color:#f0e7dd;
 	height: 100%; 
 	width: 100%; 
@@ -157,6 +160,13 @@ body{
   border-radius: 50%; /* deixa circular */
   object-fit: cover;  /* corta bordas e preenche */
   border: 2px solid #333; /* opcional: borda ao redor */
+}
+
+.phase{
+	width: 100%;
+	padding: 20pt;
+	border-radius: 20pt;
+	background-color: #85c0c4;
 }
 
 
